@@ -9,8 +9,8 @@ The repository consists of the following
 5. Dataset used for the research paper
 
 Following are the links to Dataset reference, Google Colab, GitHub(where all the files are uploaded)
-Dataset Used - 
-Open Alberta Portal https://open.alberta.ca/dataset?tags=Indigenous+education&organization=education&topic=Indigenous+Peoples
+
+Dataset Used - Open Alberta Portal https://open.alberta.ca/dataset?tags=Indigenous+education&organization=education&topic=Indigenous+Peoples
 
 Python Code Link for Google Colab: https://colab.research.google.com/drive/1-fudfdg0mrgDxO4OxtZWggYck38OB1nP
 
