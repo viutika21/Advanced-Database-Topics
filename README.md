@@ -3,10 +3,9 @@ This research paper explores the integration of Indigenous knowledge and perspec
 
 The repository consists of the following
 1. Project Report for all the three milestones
-2. Project Rubrics
+2. Dataset used for the research paper
 3. Python code
 4. Diagrams
-5. Dataset used for the research paper
 
 Following are the links to Dataset reference, Google Colab, GitHub(where all the files are uploaded)
 
