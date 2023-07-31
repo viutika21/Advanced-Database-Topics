@@ -10,11 +10,11 @@ The repository consists of the following
 
 Following are the links to Dataset reference, Google Colab, GitHub(where all the files are uploaded)
 
-Dataset Used - Open Alberta Portal https://open.alberta.ca/dataset?tags=Indigenous+education&organization=education&topic=Indigenous+Peoples
+**Dataset Used** - Open Alberta Portal https://open.alberta.ca/dataset?tags=Indigenous+education&organization=education&topic=Indigenous+Peoples
 
-Python Code Link for Google Colab: https://colab.research.google.com/drive/1-fudfdg0mrgDxO4OxtZWggYck38OB1nP
+**Python Code Link for Google Colab**: https://colab.research.google.com/drive/1-fudfdg0mrgDxO4OxtZWggYck38OB1nP
 
-Github: https://github.com/viutika21/Advanced-Database-Topics
+**Github:** https://github.com/viutika21/Advanced-Database-Topics
 
 We would like to extend our heartfelt gratitude and appreciation to our esteemed professor, Dr. Shafaq Khan, for her invaluable guidance, unwavering support, and continuous encouragement throughout this research project. Her profound expertise and insightful feedback have played a pivotal role in shaping the course of this study.
 
