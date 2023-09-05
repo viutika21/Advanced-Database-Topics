@@ -26,6 +26,19 @@
 \usepackage{csvsimple}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage{geometry}
+
+
+% Set the page margins
+\geometry{    
+    top=3.3cm,
+    bottom=4.2cm,
+    left=2.6cm,
+    right=2.6cm,
+}
+
+\setlength{\columnsep}{0.8cm} % Set the column spacing
+\setlength{\columnwidth}{7.5cm} % Set the column width
 
 \begin{document}
 
@@ -33,7 +46,7 @@
 \titleformat{\title}{\fontsize{15pt}{18pt}\bfseries}{\thetitle}{1em}{}
 \title{Addressing Educational Disparities: Assessing the Gap for Indigenous Community}
 
-\author{\authorname{Dr. Shafaq Khan, Viutika Rathod, Abhirup Ranjan, Anika Anjum Una and Neel Manish Pandya}
+\author{\authorname{Shafaq Khan, Viutika Rathod, Abhirup Ranjan, Anika Anjum Una and Neel Manish Pandya}
 \affiliation{School of Computer Science,University of Windsor, Ontario,Canada}
 }
 
@@ -46,10 +59,17 @@
 \section{\uppercase{Introduction}}
 \label{sec:introduction}
 
-The Indigenous communities in Canada experience significantly higher dropout rates compared to non-Indigenous communities in this part of the world, attributed to a range of factors such as historical and inter-generational impacts, financial inequities, social marginalization, lack of support systems, and geographic barriers \cite{GovtOfOntario17}. These factors restrict access to quality education for Indigenous students, resulting in lower educational achievements compared to the general population of Canada \cite{CFSOntario21}.\\Outline of the problem of educational disparities faced by Indigenous students in Canada, there are multiple factors such as the legacy of colonialism, residential schools, racism, and insufficient funding hinder access to post-secondary education, which is recognized as a treaty right for Indigenous students. Funding inadequacy and access difficulties contribute to a significant disparity in educational opportunities \cite{Brown23}. Also, the lack of necessary infrastructure has hindered the distribution of culturally relevant educational curricula to Indigenous communities. Teaching practices in non-Indigenous institutions need refinement, focusing on incorporating Indigenous history, cultures, and perspectives, and addressing racism and
-marginalization \cite{GovtOfCanadaEthics19}.\\Our work in this research paper is motivated by a deep understanding of past injustices and current hardships faced by Indigenous communities. We aim to address the lack of cultural responsiveness in the mainstream educational system and promote justice, fairness, and reconciliation \cite{Weston19}. By embracing empathy and recognizing the generational effects of policies like the residential school system, we seek to restore pride, dignity, and self-respect among Indigenous children \cite{Kim19}. Through cultural responsiveness, we aim to foster respect, understanding, and inclusive education for all students.\\Our objective here is to bridge the educational gap between Indigenous and non-Indigenous populations in Canada by addressing issues such as insufficient funding, cultural disconnection, discrimination, and lack of support systems for Indigenous communities. We aim to assess and analyze the quality of education for Indigenous students, promote evidence-based decision making, and ensure educational equity. Integrating Indigenous knowledge systems, languages, and histories into the curriculum is a crucial focus, empowering
+The Indigenous communities in Canada experience significantly higher dropout rates compared to non-Indigenous communities in this part of the world, attributed to a range of factors such as historical and inter-generational impacts, financial inequities, social marginalization, lack of support systems, and geographic barriers \cite{GovtOfOntario17}. These factors restrict access to quality education for Indigenous students, resulting in lower educational achievements compared to the general population of Canada \cite{CFSOntario21}.
+
+Outline of the problem of educational disparities faced by Indigenous students in Canada, there are multiple factors such as the legacy of colonialism, residential schools, racism, and insufficient funding hinder access to post-secondary education, which is recognized as a treaty right for Indigenous students. Funding inadequacy and access difficulties contribute to a significant disparity in educational opportunities \cite{Brown23}. Also, the lack of necessary infrastructure has hindered the distribution of culturally relevant educational curricula to Indigenous communities. Teaching practices in non-Indigenous institutions need refinement, focusing on incorporating Indigenous history, cultures, and perspectives, and addressing racism and
+marginalization \cite{GovtOfCanadaEthics19}.
+
+Our work in this research paper is motivated by a deep understanding of past injustices and current hardships faced by Indigenous communities. We aim to address the lack of cultural responsiveness in the mainstream educational system and promote justice, fairness, and reconciliation \cite{Weston19}. By embracing empathy and recognizing the generational effects of policies like the residential school system, we seek to restore pride, dignity, and self-respect among Indigenous children \cite{Kim19}. Through cultural responsiveness, we aim to foster respect, understanding, and inclusive education for all students.
+
+Our objective here is to bridge the educational gap between Indigenous and non-Indigenous populations in Canada by addressing issues such as insufficient funding, cultural disconnection, discrimination, and lack of support systems for Indigenous communities. We aim to assess and analyze the quality of education for Indigenous students, promote evidence-based decision making, and ensure educational equity. Integrating Indigenous knowledge systems, languages, and histories into the curriculum is a crucial focus, empowering
 Indigenous students and improving the educational experience for all.
-\\To achieve our goals, we propose a model that utilizes a NoSQL database
+
+To achieve our goals, we propose a model that utilizes a NoSQL database
 i.e. MongoDB, to address educational disparities faced by Indigenous students.
 Also using the Logistic Model we will capture unique information such
 as cultural identity, language proficiency, community involvement, gender,
@@ -64,14 +84,17 @@ integration from various sources, evaluating the success of educational initiati
 This paper explores the role of educators, particularly those teaching aspiring conservation practitioners, in responding to the Truth and Reconciliation Commission (TRC) and the National Inquiry into Missing and Murdered Indigenous Women and Girls (MMIWG). The emphasis is on the significance of reconciliation and ethical engagement with Indigenous Peoples through a revolutionary approach to teaching indigenous knowledge. The focus is on fostering understanding, empathy, and respect for Indigenous knowledge and aspirations while equipping students with critical analysis skills for ethical engagement. The paper calls for universities to "Indigenize" their approaches, embracing anti-racism, humility, reciprocity, and confronting ongoing colonialism and white supremacy. The goal is to create a learning environment that respects and values Indigenous scholars, knowledge,and voices, fostering re-conciliatory relationships between conservation practitioners and Indigenous Peoples. Efforts should go beyond course content and focus on building an anti-racist, anti-oppressive campus culture that
 centers Indigenous perspectives and enables Indigenous intellectual expression. The paper advocates for hiring more Indigenous faculty members and centering Indigenous Peoples as experts about themselves in the curriculum. The goal is to prepare students to engage with Indigenous Peoples in a just and affirming manner while respecting Indigenous knowledge and aspirations. The possible difficulties of successfully integrating Indigenous knowledge within the current curriculum and ensuring cultural sensitivity and authenticity in its application might, 
  however, be a drawback of this strategy \cite{Wu19}.
-\\This paper focuses on the use of digital technologies to support Indigenous people’s language and literacy learning, particularly in English. Here, the emphasis is on addressing the negative inter-generational impacts of colonization and socioeconomic stress on Indigenous academic performance. The systematic review of 25 empirical studies provides insights into the efficacy of digital technology in supporting Indigenous learners. While the studies demonstrate positive outcomes, there are limitations, such as the lack of rigorous research methods and comprehensive reporting. To improve the effectiveness
+
+This paper focuses on the use of digital technologies to support Indigenous people’s language and literacy learning, particularly in English. Here, the emphasis is on addressing the negative inter-generational impacts of colonization and socioeconomic stress on Indigenous academic performance. The systematic review of 25 empirical studies provides insights into the efficacy of digital technology in supporting Indigenous learners. While the studies demonstrate positive outcomes, there are limitations, such as the lack of rigorous research methods and comprehensive reporting. To improve the effectiveness
 of digital technology-based interventions, future research should
 consider culturally relevant multiliteracies frameworks, engage in longitudinal studies to track students’ progress and incorporate more Indigenous cultural elements. Additionally, there is a need for data coding schemes to capture the nuances of Indigenous language and literacy learning. The research emphasizes the importance of culturally responsive practices, partnership with Indigenous communities, and addressing the unique contextual factors affecting Indigenous education. The reliance on digital infrastructure and access to technology, however, may be a weakness of their strategy or approach and present difficulties in isolated or disadvantaged Indigenous communities where dependable internet connectivity may be scarce \cite{JiaLi21}.
-\\This paper presents the NOW (Northern Oral Language and Writing) Play project aiming to support young
+
+This paper presents the NOW (Northern Oral Language and Writing) Play project aiming to support young
 children’s oral language and writing skills in northern rural and Indigenous communities. The research emerged from the concerns raised by kindergarten teachers in northern Canadian communities about students’ limited language abilities upon entering school. The project involved collaborating with public school divisions in small rural communities and local education authorities in Indigenous regions of four Canadian provinces. Focusing on the assessment and support of young children’s oral language and writing development in play contexts. These communities face challenges related to geographic isolation, limited teaching resources, and a lack of opportunities for teachers’ professional learning. The project emphasized the use of play contexts to enhance children’s language and literacy skills. Additionally, the project aimed to develop a culturally relevant oral language assessment tool. This tool was designed to capture the diverse ways in which children use language for various social purposes during play and small-group academic
 activities. Teachers and researchers collaboratively analyzed video
 recordings and transcripts of children’s play to identify different language uses and track individual children’s language development \cite{Stagg16}. However, the project also acknowledges challenges such as parental resistance to play based approaches and the necessity for cultural sensitivity in research methods. Careful navigation of these obstacles is crucial to ensure the project’s ultimate success and positive impact.
-\\All these studies focus on the integration of indigenous knowledge across
+
+All these studies focus on the integration of indigenous knowledge across
 a range of educational contexts. These papers acknowledge the challenges
 and limitations in implementing the overall goal of integrating Indigenous
 knowledge and perspectives in education.
@@ -312,9 +335,6 @@ The logistic regression model's feature importance (coefficients) offers importa
 \section{\uppercase{Results}}
 The logistic regression model demonstrated promising results in predicting dropout rates among Indigenous students. The model achieved an accuracy rate of 0.831 on the testing dataset, indicating its ability to correctly classify dropout outcomes. Moreover, the F1 score was 0.831 (as shown in Figure~\ref{fig:result}), showcasing its effectiveness in identifying students at risk of dropping out and minimizing false positives.
 
-The interpretability of the logistic regression model allowed us to identify key factors influencing dropout rates among Indigenous students. The coefficients for various features provided valuable insights into the impact of Cultural Identity, Gender, Government Funding, Type of Educational Institute, Employment Sector, Language Proficiency, Community Involvement, Age, and Level of Education on educational outcomes. For instance, positive coefficients indicated factors associated with higher dropout rates, while negative coefficients pointed to factors linked to lower dropout rates. This understanding empowered us to design targeted interventions and support systems to enhance educational equity and bridge the educational gap for Indigenous students in Canada.
-
-
 \begin{figure}[!htb]
 	\centering 
 	\includegraphics[width=1.0\linewidth,keepaspectratio]{images/Result.png}
@@ -322,6 +342,11 @@ The interpretability of the logistic regression model allowed us to identify key
 	\caption{Showing the Accuracy for Dropped out instances for Indigenous Students.} 
 	\label{fig:result}
 \end{figure}
+
+The interpretability of the logistic regression model allowed us to identify key factors influencing dropout rates among Indigenous students. The coefficients for various features provided valuable insights into the impact of Cultural Identity, Gender, Government Funding, Type of Educational Institute, Employment Sector, Language Proficiency, Community Involvement, Age, and Level of Education on educational outcomes. For instance, positive coefficients indicated factors associated with higher dropout rates, while negative coefficients pointed to factors linked to lower dropout rates. This understanding empowered us to design targeted interventions and support systems to enhance educational equity and bridge the educational gap for Indigenous students in Canada.
+
+
+
 
 
 \section{\uppercase{Limitations/Challenges}}
